@@ -9,6 +9,7 @@ class App extends React.Component {
     return ( 
       <div>
         <Header/>
+        <Card1 />
       </div>
     )
   }
@@ -22,5 +23,18 @@ class Header extends React.Component {
   }
 }
 
+class Card1 extends React.Component {
+  render() {
+    return (
+      <div>
+        <Card className="card1">
+          <Card.Content>
+            <Card.Header><h4>Watch goes here</h4></Card.Header>
+          </Card.Content>
+        </Card>
+      </div>
+    )
+  }
+}
 
 export default App;
