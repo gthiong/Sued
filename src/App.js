@@ -7,7 +7,7 @@ import { render } from '@testing-library/react';
 class App extends React.Component {
   render() {
     return ( 
-      <div className="whole-app">
+      <div>
         <Header/>
         <Body/>
       </div>
