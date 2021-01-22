@@ -1,9 +1,8 @@
 body {
+  height: 900px;
   margin: 0;
+  padding-top: 0px;
+  font-family: 'Raleway' ,sans-serif;
   background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

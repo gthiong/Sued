@@ -9,7 +9,6 @@ class App extends React.Component {
     return ( 
       <div>
         <Header/>
-        <Body/>
       </div>
     )
   }
@@ -23,12 +22,5 @@ class Header extends React.Component {
   }
 }
 
-class Body extends React.Component {
-  render() {
-    return(
-      <div className="App-body"><h1>WATCHES</h1></div>
-    )
-  }
-}
 
 export default App;

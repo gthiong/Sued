@@ -24,8 +24,9 @@
 }
 
 .App-header {
-  background-color: #9fb2d1;
-  height: 8vh;
+  background-color: #09203f;
+  height: 50px;
+  top: 0;
   width: auto;
   display: flex;
   flex-direction: column;
