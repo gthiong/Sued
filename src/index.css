@@ -1,7 +1,8 @@
 body {
-  height: 900px;
   margin: 0;
+  height: 1000px;
   padding-top: 0px;
+  padding-bottom: 0px;
   font-family: 'Raleway' ,sans-serif;
   background-image: linear-gradient(to bottom, #09203f 0%, #537895 100%);
 }
