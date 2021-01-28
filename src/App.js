@@ -18,7 +18,9 @@ class App extends React.Component {
 class Header extends React.Component {
   render() {
     return (
-      <div className="App-header"><h2>SUED WATCHES</h2></div>
+      <div className="App-header">
+        <h4>SUED WATCHES</h4>
+      </div>
     )
   }
 }
@@ -27,11 +29,25 @@ class Card1 extends React.Component {
   render() {
     return (
       <div>
-        <Card className="card1">
-          <Card.Content>
-            <Card.Header><h4>Watch goes here</h4></Card.Header>
-          </Card.Content>
-        </Card>
+        <Grid>
+          <Grid.Row columns={1}>
+            <Grid.Column>
+              <Card className="card1">
+                <Card.Content>
+                  <Card.Header><h4>Watch 1</h4></Card.Header>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column>
+              <Card className="card1">
+                <Card.Content>
+                  <Card.Header><h4>Watch 2</h4></Card.Header>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
+        
       </div>
     )
   }
