@@ -59,11 +59,15 @@ function Date_Picker() {
   const[value, onChange] = useState(new Date());
 
   return (
-    <div>
-      <Button>
+    <div >
+      <Button className="date_picker">
+        Today: 
       <DatePicker
         onChange={onChange}
         value={value}
+        clearIcon={null}
+        format="MMM dd"
+        monthAriaLabel="Month"
       />
       </Button>
     </div>
