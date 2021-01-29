@@ -1,8 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import './App.css';
 import GridLayout from 'react-grid-layout';
-import { Card, Grid} from 'semantic-ui-react';
+import { Card, Grid, Button} from 'semantic-ui-react';
 import { render } from '@testing-library/react';
+import DatePicker from 'react-date-picker';
 
 class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ class Header extends React.Component {
     return (
       <div className="App-header">
         <h4>SUED WATCHES</h4>
+        <Date_Picker />
       </div>
     )
   }
@@ -30,7 +32,7 @@ class Card1 extends React.Component {
     return (
       <div>
         <Grid>
-          <Grid.Row columns={1}>
+          <Grid.Row container columns={2}>
             <Grid.Column>
               <Card className="card1">
                 <Card.Content>
@@ -51,6 +53,21 @@ class Card1 extends React.Component {
       </div>
     )
   }
+}
+
+function Date_Picker() {
+  const[value, onChange] = useState(new Date());
+
+  return (
+    <div>
+      <Button>
+      <DatePicker
+        onChange={onChange}
+        value={value}
+      />
+      </Button>
+    </div>
+  );
 }
 
 export default App;
